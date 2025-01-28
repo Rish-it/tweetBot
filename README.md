@@ -1,6 +1,19 @@
-# tweetBot
-This code implements a Solana-based bot that scans recent tweets from a specified Twitter user, identifies tweets related to bullish Solana token posts, and executes swaps for the mentioned tokens using the Raydium SDK. It performs the following functions:
-Fetch Tweets: Retrieves recent tweets from a specified user via a RapidAPI Twitter API integration, filtering tweets within the last minute.
-Token Extraction: Uses OpenAI APIs to analyze tweets and extract Solana token addresses if the tweet indicates a bullish signal.
-Swap Execution: Initiates token swaps on Solana using Raydium APIs, handling transactions, signing them with the owner's private key, and confirming them on the blockchain.
-Configuration: Uses environment variables for API keys, RPC URL, and wallet details. Supports error handling and logging for API interactions and blockchain transactions.
+# Solana Tweet Bot  
+
+This bot automates token swaps on Solana by analyzing tweets from a specified user to identify bullish signals for Solana tokens. Built with seamless API integrations and blockchain capabilities, it performs the following key functions:
+
+## 1. Fetch Tweets  
+- Retrieves recent tweets from a given Twitter user via the RapidAPI Twitter API.  
+- Filters tweets posted within the last minute to ensure real-time relevance.  
+
+## 2. Token Detection  
+- Leverages OpenAI APIs to analyze tweet content.  
+- Extracts Solana token addresses if the tweet contains a bullish signal.  
+
+## 3. Swap Execution  
+- Uses Raydium APIs to initiate token swaps on the Solana blockchain.  
+- Handles transaction generation, signing with the owner's private key, and blockchain confirmation.  
+
+## 4. Environment Configuration  
+- Securely manages API keys, RPC URL, and wallet credentials via environment variables.  
+- Includes robust error handling and detailed logging for API calls and blockchain transactions.  
